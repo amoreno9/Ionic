@@ -1,0 +1,34 @@
+<!--
+  Generated template for the ListarclientesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Clientes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item (click)="presentarAcciones()">
+      <ion-avatar item-start>
+        <img src="https://lahoguera.mx/wp-content/uploads/2018/03/Leobardo-V%C3%A1zquez.jpg">
+      </ion-avatar>
+      <h2>Atzin</h2>
+      <h3>Tienes 21 años</h3>
+      <p>no le gusta asistir a clases</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom>
+    <button ion-fab color="danger" (click)="Agregar()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>

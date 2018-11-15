@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Ventas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item (click)="presentarAcciones()">
+      <ion-avatar item-start>
+        <img src="https://acs2.blob.core.windows.net/imgcatalogo/l/VA_d270b4f3ea334b84a8e9fab52bfb255c.jpg">
+      </ion-avatar>
+      <h2>Lobo 2018</h2>
+      <h3>XLT Doble Cabina V8 4x4</h3>
+      <p>$668,000.00</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom>
+    <button ion-fab color="danger" (click)="Agregar()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
